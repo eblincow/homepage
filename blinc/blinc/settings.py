@@ -4,19 +4,27 @@ Settings for blinc
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
+DIR_1 = os.path.dirname(os.path.dirname(__file__))
+DIR_0 = '/'.join(DIR_1.split('/')[:-1]) + "/"
+DIR_2 = os.path.join(DIR_1, 'blinc')
 
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Change when in production
+SECRET_KEY = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeea'
+
+IS_PRODUCTION = False   #this will be replaced by the package builder with a True/False.
+
+DEBUG = not IS_PRODUCTION
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+if IS_PRODUCTION:
+    ALLOWED_HOSTS = ['localhost', '.amazonaws.com']
+else:
+    ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -44,31 +52,27 @@ ROOT_URLCONF = 'blinc.urls'
 WSGI_APPLICATION = 'blinc.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(DIR_1, 'db.sqlite3'),
     }
 }
 
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
-
 STATIC_URL = '/static/'
+
+
+TEMPLATE_DIRS = (
+    os.path.join(DIR_2, 'templates'),
+)
+
+STATICFILES_DIRS = (
+    os.path.join(DIR_2, "static"),
+)
