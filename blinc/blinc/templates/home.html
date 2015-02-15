@@ -2,6 +2,7 @@
 <html>
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans">
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
 <style>
 
@@ -29,19 +30,14 @@
         border: 1px solid #000;
         background: #000;
         display: inline-block;
-        z-index: 0;
         border-radius: 4px 4px 4px 4px;
     }
 
     .tabrow li.selected {
-        z-index: 2;
         background: #001;
         color: #FFD6EB;
     }
 
-    .tabrow:before {
-        z-index: 1;
-    }
 
     [class*='col-'] {
         float: left;
@@ -70,16 +66,15 @@
     }
 
     .pic {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top: 0;
-    left: 0;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 0;
+        left: 0;
         border-radius: 20px;
-
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 
     }
 
@@ -94,6 +89,11 @@
     }
 
 
+    .arrow {
+        position: absolute;
+        height: 25px;
+    }
+
 </style>
 
 <body>
@@ -101,9 +101,9 @@
 
 <div id="tabs">
 <ul class="tabrow">
-    <li class="selected">about</li>
+    <li>about</li>
     <li>past work</li>
-    <li>contact</li>
+    <li class="selected">contact</li>
     <li>client login</li>
     <li style="background: none; border:none;">
         <div class="piccontainer"  style="padding-top: 10px;">
@@ -111,12 +111,15 @@
         </div>
     </li>
 </ul>
+
 </div>
 
 <div id="about">
   <div class="col-2-3">
      <h1>Blincow Software Consulting</h2>
-         Hello there.
+         <p>Hello there. I'm a neuroscience grad-school dropout turned software consultant.
+         I've worked on some interesting projects, as you can see in my past work. My areas of specialty are back-end coding and infrastructure,
+         data processing and analysis, and anything thats fun and challenging.
   </div>
   <div class="col-1-3">
       <div class="piccontainer">
@@ -126,5 +129,10 @@
 </div>
 
 </body>
+
+<script>
+    $("<img src={% static 'arrow.png' %} class='arrow'>").insertBefore($('li.selected'));
+</script>
+
 </html>
 
