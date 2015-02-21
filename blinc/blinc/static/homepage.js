@@ -6,6 +6,8 @@ function showAbout() {
     $('.content').hide();
 
     $('#about').show();
+    console.log("\nand you can sit and think about all those things");
+    console.log("\nwhile sipping on whiskey and coke.");
 }
 function showLogin() {
     $('li.selected').removeClass('selected');
@@ -13,6 +15,8 @@ function showLogin() {
     $('.content').hide();
     $('#about').hide();
     $('#login').show();
+    console.log("\n\nThis login feature sees about as much use as a snow-plough in Ecuador.");
+
 }
 
 function showContact() {
@@ -29,34 +33,30 @@ function showPastWork() {
     $('.content').hide();
     $('#about').hide();
     $('#pastwork').show();
+    console.log("\n\nStop looking in the goddamn console!");
 }
 
 
 $( document ).ready(function() {
-    console.log( "Dont have your console open while looking at my webpage, fool!" );
-    console.log("\nLook, I didn't mean it like that. Sometimes the things I say just get taken out of context.");
-    console.log("\nDon't be like that. ");
-    console.log("\nLets start over, can we?");
     console.log("\nSometimes you say things in life you don't mean.");
     console.log("\nand ... it turns out there's no way to take them back.");
-    console.log("\nand you can sit and think about all those things");
-    console.log("\nwhile sipping on whiskey and coke.");
-    //<li class="aboutlink selected">about</li>
-    //<li class="pastworklink">past work</li>
-    //<li class="contactlink">contact</li>
-    //<li class="loginlink">client login</li>)
+
     $('.aboutlink').onclick
 
-    $(".aboutlink").click(function() {
+    $(".aboutlink").click(function(e) {
+        e.preventDefault();
         showAbout();
     });
-    $(".contactlink").click(function() {
+    $(".contactlink").click(function(e) {
+        e.preventDefault();
         showContact();
     });
-    $(".loginlink").click(function() {
+    $(".loginlink").click(function(e) {
+        e.preventDefault();
         showLogin();
     });
-    $(".pastworklink").click(function() {
+    $(".pastworklink").click(function(e) {
+        e.preventDefault();
         showPastWork();
     });
 
