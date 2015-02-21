@@ -7,13 +7,20 @@ import os.path
 import datetime
 
 
+from django.core.context_processors import csrf
+from django.views.decorators.csrf import ensure_csrf_cookie
+
+from django.core.context_processors import csrf
+
+
 def home(request):
-    return render_to_response('home.html')
+    return render_to_response('home.html', RequestContext(request))
 
 
 def login(request):
 
-    if 'user' and 'pass' in request.POST:
-        return HttpResponse('hi how are you?')
+    return render_to_response("client_login.html", RequestContext(request))
 
-    return render('happy.html', RequestContext(request))
+
+    #if 'user' and 'pass' in request.POST:
+    #    return render_to_response('client_login.html', {}, context_instance=RequestContext(request))

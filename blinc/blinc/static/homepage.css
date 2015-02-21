@@ -1,4 +1,13 @@
 
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('fonts/DroidSans.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata-Regular.ttf')  format('truetype');
+}
 
 
 html {
@@ -31,10 +40,6 @@ body {
     border-radius: 4px 4px 4px 4px;
 }
 
-.content {
-    //margin-left: 12%;
-    //margin-right: 12%;
-}
 
 .tabrow li.selected {
     color: #FFD6EB;
@@ -49,6 +54,7 @@ body {
     width: 66.66%;
     padding-left: 10%;
     padding-right: 20px;
+    margin-bottom: 100px;
 
 }
 
@@ -104,7 +110,7 @@ body {
 }
 
 #peacepic {
-    height: 80px;
+    height: 70px;
 }
 
 .hidden {
@@ -113,8 +119,34 @@ body {
 
 footer {
 position: absolute;
-left: 88%;
-bottom: 0px;
+left: 0px;
+    width: 100%;
+    bottom: 0px;
 height: 80px;
+    //background: black;
 }
 
+.footerpic{
+    position: absolute;
+    left: 88%;
+    z-index: -2;
+    bottom: -10px;
+
+}
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "1";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}

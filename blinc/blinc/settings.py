@@ -1,5 +1,5 @@
 """
-Settings for blinc
+homepage blinc
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -12,7 +12,8 @@ DIR_2 = os.path.join(DIR_1, 'blinc')
 
 
 # Change when in production
-SECRET_KEY = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeea'
+SECRET_KEY = '6qbb6a70ss+r!z9ictzp^evy-+w+6c5!0d%n6d$#wq&=y5fku_'
+
 
 IS_PRODUCTION = False   #this will be replaced by the package builder with a True/False.
 
