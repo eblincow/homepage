@@ -14,13 +14,16 @@ from django.core.context_processors import csrf
 
 
 def home(request):
-    return render_to_response('home.html', RequestContext(request))
 
+    context = RequestContext(request)
+    context.update(settings.USERNAMES)
+    return render_to_response('home.html', context)
 
 def login(request):
-
     return render_to_response("client_login.html", RequestContext(request))
-
 
     #if 'user' and 'pass' in request.POST:
     #    return render_to_response('client_login.html', {}, context_instance=RequestContext(request))
+
+def toh(request):
+    return render_to_response("toh.html", RequestContext(request))

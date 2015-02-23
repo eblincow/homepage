@@ -20,6 +20,10 @@ body {
     margin: 0 0 80px; /* bottom = footer height */
 }
 
+a {
+    cursor: pointer;
+}
+
 .tabrow {
     text-align: center;
     list-style: none;
@@ -33,6 +37,7 @@ body {
 .tabrow li {
     margin: 0 10px;
     color: #99EBFF;
+
     padding: 0 10px;
     border: 1px solid #000;
     background: #000;

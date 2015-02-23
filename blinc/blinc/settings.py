@@ -77,3 +77,6 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(DIR_2, "static"),
 )
+
+
+USERNAMES = ['eb']
