@@ -13,12 +13,14 @@
 html {
     position: relative;
     min-height: 100%;
+    overflow-y: scroll;
 }
 
 body {
     font-family: "Droid Sans", "Lucida Console", serif;
     margin: 0 0 80px; /* bottom = footer height */
 }
+
 
 a {
     cursor: pointer;
@@ -60,7 +62,7 @@ a {
     padding-left: 10%;
     padding-right: 20px;
     margin-bottom: 100px;
-
+    //overflow: hidden;
 }
 
 .col-2-3 h1, .col-2-3 h2{
@@ -129,11 +131,13 @@ a {
 }
 
 footer {
-    position: absolute;
-    left: 0px;
+    position: fixed;
+    left: 0;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     height: 80px;
+    background: white;
+    z-index: 1;
 }
 
 .footerpic{
@@ -150,11 +154,12 @@ hr.style-eight {
     text-align: center;
 }
 hr.style-eight:after {
-    content: "1";
+    content: url('1111.jpg');
     display: inline-block;
     position: relative;
     top: -0.7em;
     font-size: 1.5em;
-    padding: 0 0.25em;
     background: white;
 }
+
+

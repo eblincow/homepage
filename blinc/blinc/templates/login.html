@@ -15,7 +15,8 @@
 
     <div class="col-1-3">
         <div class="piccontainer">
-          <img class="pic puppy" src={% static 'puppy1.jpg' %} height="2448" width="3264">
+            <!-- b64'd mock image for deferring -->
+            <img class="pic puppy" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={% static 'puppy1.jpg' %} height="2448" width="3264">
         </div>
     </div>
 </div>
