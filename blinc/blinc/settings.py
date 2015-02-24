@@ -73,6 +73,7 @@ STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
     os.path.join(DIR_2, 'templates'),
+    os.path.join(DIR_2, 'client_apps/templates'),
 )
 
 STATICFILES_DIRS = (
@@ -81,3 +82,4 @@ STATICFILES_DIRS = (
 
 
 USERNAMES = {'eb':'arcolight'}
+

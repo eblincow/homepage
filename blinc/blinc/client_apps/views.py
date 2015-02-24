@@ -6,9 +6,6 @@ from django.http import HttpResponse, HttpResponseBadRequest
 
 def test(request):
     if request.is_secure():
-
-        return render_to_response("client_app.html", RequestContext(request))
-    else:
-        return HttpResponseBadRequest
-
-
+        if request.COOKIES.get('authenticated')=='player':
+            return render_to_response("client_app.html", RequestContext(request))
+    render_to_response("login_error.html", RequestContext(request))
