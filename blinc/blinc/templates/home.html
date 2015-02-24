@@ -1,60 +1,66 @@
 {% load staticfiles %}
 <html>
 
-<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans"> -->
 <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}">
-<script src="{% static 'jquery-1.11.2.min.js' %}"></script>
-<script src="{% static 'homepage.js' %}"></script>
 
+<title>Eric Blincow Software Consulting</title>
 
-<title>Blincow Software Consulting</title>
 <body>
 
-
 <div id="tabs">
-<ul class="tabrow">
-    <li class="aboutlink selected">about</li>
-    <li class="pastworklink">past work</li>
-    <li class="contactlink">contact</li>
-    <li class="loginlink">client login</li>
-    <li style="background: none; border:none;">
-        <div class="piccontainer">
-            <a href="https://github.com/eblincow"><img src="{% static 'GitHub_Logo.png' %}" id="githubpic"></a>
-        </div>
-    </li>
-    <li style="background: none; border:none;">
-        <div class="piccontainer">
-            <a href="https://www.linkedin.com/pub/eric-blincow/57/8a4/b25"><img src="{% static 'linkedin.jpg' %}" id="linkedpic"></a>
-        </div>
-    </li>
-</ul>
-
+    <ul class="tabrow">
+        <li class="aboutlink selected">about</li>
+        <li class="pastworklink">past work</li>
+        <li class="contactlink">contact</li>
+        <li class="loginlink">client login</li>
+        <li style="background: none; border:none;">
+            <div class="piccontainer">
+                <a href="https://github.com/eblincow"><img src="{% static 'GitHub_Logo.png' %}" id="githubpic"></a>
+            </div>
+        </li>
+        <li style="background: none; border:none;">
+            <div class="piccontainer">
+                <a href="https://www.linkedin.com/pub/eric-blincow/57/8a4/b25"><img src="{% static 'linkedin.jpg' %}" id="linkedpic"></a>
+            </div>
+        </li>
+    </ul>
 </div>
 
 
-
+<!-- main content -->
 {% include 'about.html' %}
 {% include 'contact.html' %}
 {% include 'pastwork.html' %}
 {% include 'login.html' %}
 
-
-
-
+<!-- sticky footer -->
 <footer>
     <div class="footerpic">
         <img src="{% static 'peace.gif' %}" id="peacepic">
-
     </div>
     <hr class="style-eight">
-
-
 </footer>
 
+<!-- defer javascript -->
+<script type="text/javascript">
+
+function downloadJSAtOnload() {
+    var element1 = document.createElement("script");
+    element1.src = "{% static 'jquery-1.11.2.min.js' %}";
+    document.body.appendChild(element1);
+
+    var element2 = document.createElement("script");
+    element2.src = "{% static 'homepage.js' %}";
+    document.body.appendChild(element2);
+    }
+
+if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
 
 </body>
-
-
-
 </html>
 

@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: "Droid Sans";
+    font-family: "Droid Sans", "Lucida Console", serif;
     margin: 0 0 80px; /* bottom = footer height */
 }
 
@@ -37,12 +37,12 @@ a {
 .tabrow li {
     margin: 0 10px;
     color: #99EBFF;
-
+    cursor: pointer;
     padding: 0 10px;
     border: 1px solid #000;
     background: #000;
     display: inline-block;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 2px 2px 2px 2px;
 }
 
 
@@ -119,25 +119,27 @@ a {
     height: 70px;
 }
 
+.puppy {
+    max-height: 400px;
+    width: auto;
+}
+
 .hidden {
     display: none;
 }
 
 footer {
-position: absolute;
-left: 0px;
+    position: absolute;
+    left: 0px;
     width: 100%;
     bottom: 0px;
-height: 80px;
-    //background: black;
+    height: 80px;
 }
 
 .footerpic{
     position: absolute;
     left: 88%;
-    z-index: -2;
     bottom: -10px;
-
 }
 
 hr.style-eight {

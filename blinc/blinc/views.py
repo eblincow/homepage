@@ -1,24 +1,19 @@
-from django.shortcuts import render_to_response, render
+from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.conf import settings
-from django.http import HttpResponse, HttpResponseBadRequest
-
-
 
 usernames = settings.USERNAMES
 
 
 def home(request):
+    # the main homepage view!
     context = RequestContext(request)
+    context.update({'settings':settings})
     return render_to_response('home.html', context)
 
 
-
-
-
-
-
 def login(request):
+    # the login view!
     if request.is_secure():
         if 'u' and 'p' in request.POST:
             user = request.POST.get('u')
