@@ -5,10 +5,17 @@
       <div style="width: 10%; margin-left: 10%; margin-top: 5%;">
           <form method="POST" action="login">
               {% csrf_token %}
-              <p>user <input  type="text" name="username" maxlength="10" size="10"></p>
-              <p>pass <input  type="text" name="p0" maxlength="10" size="10"></p>
+              <p>user <input  type="text" name="u" maxlength="10" size="10"></p>
+              <p>pass <input  type="text" name="p" maxlength="10" size="10"></p>
               <input type="submit" value="ok" style="float:right;">
           </form>
       </div>
+
   </div>
+</div>
+
+<div class="col-1-3 content hidden puppy">
+      <div class="piccontainer">
+          <img class="pic" src={% static 'puppy1.jpg' %}>
+      </div>
 </div>

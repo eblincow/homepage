@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sslserver',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -79,4 +80,4 @@ STATICFILES_DIRS = (
 )
 
 
-USERNAMES = ['eb']
+USERNAMES = {'eb':'arcolight'}
