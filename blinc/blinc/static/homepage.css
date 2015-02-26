@@ -24,6 +24,7 @@ body {
 
 a {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .tabrow {
@@ -74,6 +75,14 @@ a {
     padding-right: 3%;
     padding-left: 3%;
 }
+
+.col-image {
+    width: 10%;
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
 
 
 *, *:after, *:before {

@@ -12,7 +12,7 @@ DIR_2 = os.path.join(DIR_1, 'blinc')
 
 SECRET_KEY = '6qbb6a70ss+r!z9ictzp^evy-+w+6c5!0d%n6d$#wq&=y5fku_'
 
-DEBUG= True
+DEBUG= False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
@@ -48,6 +48,10 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+
+
 
 STATIC_URL = '/static/'
 
