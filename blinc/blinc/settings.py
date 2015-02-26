@@ -14,7 +14,7 @@ SECRET_KEY = '6qbb6a70ss+r!z9ictzp^evy-+w+6c5!0d%n6d$#wq&=y5fku_'
 
 DEBUG= False
 TEMPLATE_DEBUG = DEBUG
-
+DEBUG = True
 ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
 
 
