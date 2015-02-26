@@ -1,10 +1,11 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.conf import settings
+from django.views.decorators.gzip import gzip_page
 
 usernames = settings.USERNAMES
 
-
+@gzip_page
 def home(request):
     # the main homepage view!
     context = RequestContext(request)

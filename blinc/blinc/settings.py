@@ -12,14 +12,19 @@ DIR_2 = os.path.join(DIR_1, 'blinc')
 
 SECRET_KEY = '6qbb6a70ss+r!z9ictzp^evy-+w+6c5!0d%n6d$#wq&=y5fku_'
 
-IS_PRODUCTION = False   #this will be replaced by the package builder with a True/False.
-DEBUG = not IS_PRODUCTION
+DEBUG= True
 TEMPLATE_DEBUG = DEBUG
 
-if IS_PRODUCTION:
-    ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
-else:
-    ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
+
+
+GZIP_CONTENT_TYPES = (
+    'text/css',
+    'application/javascript',
+    'application/x-javascript',
+    'text/javascript'
+)
+
 
 INSTALLED_APPS = (
     'google.appengine',
@@ -30,6 +35,7 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.gzip.GZipMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
