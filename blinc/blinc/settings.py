@@ -22,8 +22,9 @@ else:
     ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = (
+    'google.appengine',
     'django.contrib.staticfiles',
-    'sslserver',
+    'blinc',
 )
 
 MIDDLEWARE_CLASSES = (
