@@ -26,10 +26,7 @@ GZIP_CONTENT_TYPES = (
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
-
 INSTALLED_APPS = (
-    #'google.appengine',
-    #'django_nose',
     'django.contrib.staticfiles',
     'blinc',
 )
