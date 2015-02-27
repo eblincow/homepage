@@ -2,6 +2,9 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.conf import settings
 from django.views.decorators.gzip import gzip_page
+from django.http import HttpResponse
+import os
+import codecs
 
 usernames = settings.USERNAMES
 
@@ -15,15 +18,19 @@ def home(request):
 
 def login(request):
     # the login view!
-    if request.is_secure():
-        if 'u' and 'p' in request.POST:
-            user = request.POST.get('u')
-            password = request.POST.get('p')
-            if user in usernames.keys() and password == usernames.get(user):
-                response = render_to_response("client_login.html", RequestContext(request))
-                response.set_cookie(key="authenticated",value="player",max_age=6000)
-                return response
+    if 'u' and 'p' in request.POST:
+        user = request.POST.get('u')
+        password = request.POST.get('p')
+        if user in usernames.keys() and password == usernames.get(user):
+            response = render_to_response("client_login.html", RequestContext(request))
+            response.set_cookie(key="authenticated",value="player",max_age=6000)
+            return response
     return render_to_response('login_error.html',RequestContext(request))
 
 
+def resume(request):
+    file1 = os.path.join(settings.DIR_2, 'BlincowResume.txt')
+    with codecs.open(file1, 'r', encoding='utf8') as f:
+        content = f.read()
+    return HttpResponse(content, content_type='text/plain; charset=utf-8')
 

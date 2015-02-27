@@ -9,12 +9,9 @@ DIR_1 = os.path.dirname(os.path.dirname(__file__))
 DIR_0 = '/'.join(DIR_1.split('/')[:-1]) + "/"
 DIR_2 = os.path.join(DIR_1, 'blinc')
 
-
 SECRET_KEY = '6qbb6a70ss+r!z9ictzp^evy-+w+6c5!0d%n6d$#wq&=y5fku_'
-
-DEBUG= False
-TEMPLATE_DEBUG = DEBUG
 DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
 
 
@@ -63,7 +60,6 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(DIR_2, "static"),
 )
-
 
 USERNAMES = {'eb':'arcolight'}
 EMAIL = "eric@eblincow.com"
