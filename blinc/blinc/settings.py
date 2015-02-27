@@ -20,7 +20,8 @@ GZIP_CONTENT_TYPES = (
     'text/css',
     'application/javascript',
     'application/x-javascript',
-    'text/javascript'
+    'text/javascript',
+    'application/x-font-ttf',
 )
 
 

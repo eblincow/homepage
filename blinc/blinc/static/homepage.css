@@ -72,8 +72,8 @@ a {
     padding-left: 3%;
 }
 
-.col-image {
-    width: 10%;
+.col-half {
+    width: 50%;
     padding-right: 3%;
     padding-left: 3%;
 
@@ -124,11 +124,6 @@ a {
 
 #peacepic {
     height: 70px;
-}
-
-.puppy {
-    max-height: 400px;
-    width: auto;
 }
 
 .hidden {
