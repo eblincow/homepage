@@ -32,5 +32,11 @@ def resume(request):
     file1 = os.path.join(settings.DIR_2, 'BlincowResume.txt')
     with codecs.open(file1, 'r', encoding='utf8') as f:
         content = f.read()
-    return HttpResponse(content, content_type='text/plain; charset=utf-8')
+    # Censor the references section to not expose friends details
+    if "references" not in request.GET:
+        content_final = content.split("References")[0]
+    else:
+        # If they include ?references in the url
+        content_final = content
+    return HttpResponse(content_final, content_type='text/plain; charset=utf-8')
 
