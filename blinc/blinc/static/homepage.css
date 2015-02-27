@@ -1,3 +1,4 @@
+/* css styles for the homepage! */
 
 @font-face {
   font-family: 'Droid Sans';
@@ -8,7 +9,6 @@
   font-family: 'Inconsolata';
   src: url('fonts/Inconsolata-Regular.ttf')  format('truetype');
 }
-
 
 html {
     min-height: 100%;
@@ -46,7 +46,6 @@ a {
     border-radius: 2px 2px 2px 2px;
 }
 
-
 .tabrow li.selected {
     color: #FFD6EB;
 }
@@ -61,7 +60,6 @@ a {
     padding-left: 10%;
     padding-right: 20px;
     margin-bottom: 100px;
-    //overflow: hidden;
 }
 
 .col-2-3 h1, .col-2-3 h2{
@@ -160,15 +158,4 @@ hr.style-eight {
     color: #333;
     text-align: center;
 }
-/*
-hr.style-eight:after {
-    content: url('1111.jpg');
-    display: inline-block;
-    position: relative;
-    top: -0.5em;
-    font-size: 1.5em;
-    background: white;
-}
-*/
-
 

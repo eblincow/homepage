@@ -1,4 +1,4 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
     # Examples:
@@ -8,5 +8,7 @@ urlpatterns = patterns('',
     # /resume -- the resume without references
     # /resume?references -- the resume with references
     url(r'^resume', 'blinc.views.resume', name='resume'),
-    url(r'^client_apps/', 'blinc.client_apps.views.test', name='test'),
+
+    # hidden area to debut client apps
+    url(r'^client_apps/', 'blinc.client_apps.views.client_app', name='test'),
 )

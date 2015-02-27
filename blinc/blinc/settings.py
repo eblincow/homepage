@@ -2,7 +2,8 @@
 homepage blinc
 """
 
-import os
+import os,sys
+
 
 # Directory structure
 DIR_1 = os.path.dirname(os.path.dirname(__file__))
@@ -23,8 +24,12 @@ GZIP_CONTENT_TYPES = (
 )
 
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+
 INSTALLED_APPS = (
-    'google.appengine',
+    #'google.appengine',
+    #'django_nose',
     'django.contrib.staticfiles',
     'blinc',
 )
@@ -38,7 +43,15 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'blinc.urls'
 WSGI_APPLICATION = 'blinc.wsgi.application'
-DATABASES = {}
+
+# Compromise between testing framework and GAE
+if 'test' in sys.argv or 'test_coverage' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+        }
+    }
+
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -63,7 +76,8 @@ STATICFILES_DIRS = (
 
 USERNAMES = {'eb':'arcolight'}
 EMAIL = "eric@eblincow.com"
-
+# Dont use apostrophes ' or funky characters orjj
+UNAUTHORIZED_MESSAGE = "You aren't authorized to access this area!"
 
 
 
