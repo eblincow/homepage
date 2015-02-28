@@ -1,24 +1,10 @@
 /* css styles for the homepage! */
 
-@font-face {
-  font-family: 'Droid Sans';
-  src: url('fonts/DroidSans.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('fonts/Inconsolata-Regular.ttf')  format('truetype');
-}
-
-html {
-    min-height: 100%;
-}
-
 body {
+    background: #FFFFCC;
     font-family: "Droid Sans", "Lucida Console", serif;
     margin: 0 0 80px; /* bottom = footer height */
 }
-
 
 a {
     cursor: pointer;
@@ -28,7 +14,7 @@ a {
 .tabrow {
     text-align: center;
     list-style: none;
-    margin: 0;
+    margin: 15px;
     padding: 0;
     line-height: 24px;
     position: relative;
@@ -36,14 +22,15 @@ a {
 }
 
 .tabrow li {
-    margin: 0 10px;
+    margin: 4px;
     color: #99EBFF;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 10px;
     border: 1px solid #000;
     background: #000;
     display: inline-block;
     border-radius: 2px 2px 2px 2px;
+    font-size: larger;
 }
 
 .tabrow li.selected {
@@ -52,7 +39,7 @@ a {
 
 [class*='col-'] {
     float: left;
-    padding-top: 3%;
+    padding-top: 5px;
 }
 
 .col-2-3 {
@@ -62,7 +49,7 @@ a {
     margin-bottom: 100px;
 }
 
-.col-2-3 h1, .col-2-3 h2{
+#pastwork h1 {
     margin-bottom: 10px;
 }
 
@@ -78,8 +65,6 @@ a {
     padding-left: 3%;
 
 }
-
-
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -107,21 +92,6 @@ a {
     padding-top: 10px;
 }
 
-#githubpic {
-    height:25px;
-    position: absolute;
-    top:-6px;
-}
-
-
-#linkedpic {
-    height:55px;
-    position: absolute;
-    top: -18px;
-    right: -110px;
-
-}
-
 #peacepic {
     height: 70px;
 }
@@ -135,18 +105,19 @@ footer {
     left: 0;
     width: 100%;
     bottom: 0;
-    height: 80px;
-    background: white;
+    height: 72px;
+    background: rgb(255, 255, 231);
     z-index: 1;
 }
 
-.footerpic{
+.footerpic {
     position: absolute;
     left: 88%;
     bottom: -10px;
 }
 
 hr.style-eight {
+    margin: 0;
     padding: 0;
     border: none;
     border-top: medium double #333;
@@ -154,18 +125,18 @@ hr.style-eight {
     text-align: center;
 }
 
-
-
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones and tablets and such */
 @media only screen
-and (max-width : 480px) and (max-height: 600px)
-{
-/* Styles */
-body { background: cyan; }
-footer { visibility: hidden; }
+and (max-width: 595px) {
+    footer {  display: none;  }
+    h1 {  font-size: 16pt;  }
+    .col-2-3 {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .col-1-3 {  width: 100%;  }
+    * {  font-size: large;  }
 }
-
-
 
 
 

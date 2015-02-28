@@ -2,7 +2,7 @@
 homepage blinc
 """
 
-import os,sys
+import os, sys
 
 
 # Directory structure
@@ -15,7 +15,6 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['.eblincow.com', '.appspot.com']
 
-
 GZIP_CONTENT_TYPES = (
     'text/css',
     'application/javascript',
@@ -23,7 +22,6 @@ GZIP_CONTENT_TYPES = (
     'text/javascript',
     'application/x-font-ttf',
 )
-
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
@@ -49,16 +47,13 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
         }
     }
 
-
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-SESSION_EXPIRE_AT_BROWSER_CLOSE=True
-
-
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 STATIC_URL = '/static/'
 
@@ -71,7 +66,7 @@ STATICFILES_DIRS = (
     os.path.join(DIR_2, "static"),
 )
 
-USERNAMES = {'eb':'arcolight'}
+USERNAMES = {'eb': 'arcolight'}
 EMAIL = "eric@eblincow.com"
 # Dont use apostrophes ' or funky characters orjj
 UNAUTHORIZED_MESSAGE = "You aren't authorized to access this area!"

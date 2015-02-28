@@ -1,5 +1,3 @@
-
-
 function showAbout() {
     $('li.selected').removeClass('selected');
     $('li.aboutlink').addClass('selected');
@@ -14,7 +12,7 @@ function showLogin() {
     $('.content').hide();
     $('#about').hide();
     $('#login').show();
-    console.log("\n\nThis login feature sees about as much use as a snow-plough in Ecuador.");
+    console.log("\nThis login feature sees about as much use as a snow-plough in Ecuador.");
 }
 
 function showContact() {
@@ -31,28 +29,28 @@ function showPastWork() {
     $('.content').hide();
     $('#about').hide();
     $('#pastwork').show();
-    console.log("\n\nStop looking in the goddamn console!");
+    console.log("\nStop looking in the goddamn console!");
 }
 
 
-$( document ).ready(function() {
+$(document).ready(function () {
     console.log("\nSometimes you say things in life you don't mean.");
     console.log("\nand ... it turns out there's no way to take them back.");
 
 
-    $(".aboutlink").click(function(e) {
+    $(".aboutlink").click(function (e) {
         e.preventDefault();
         showAbout();
     });
-    $(".contactlink").click(function(e) {
+    $(".contactlink").click(function (e) {
         e.preventDefault();
         showContact();
     });
-    $(".loginlink").click(function(e) {
+    $(".loginlink").click(function (e) {
         e.preventDefault();
         showLogin();
     });
-    $(".pastworklink").click(function(e) {
+    $(".pastworklink").click(function (e) {
         e.preventDefault();
         showPastWork();
     });
