@@ -15,16 +15,19 @@ a {
     text-align: center;
     font-family: "Inconsolata";
     margin: 0px;
+    padding: 0px;
 }
 
 .tabrow li {
     margin: 0px;
     color: #99EBFF;
     cursor: pointer;
-    padding: 10px;
+    padding: 4px;
     background: #000;
     display: inline-block;
-    border-radius: 2px 2px 2px 2px;
+    //border-radius: 7px 7px 0px 0px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: larger;
 }
 
@@ -51,8 +54,25 @@ a {
     margin-top: 33px;
 }
 
-#about p {
+#pastwork span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.email {
+    margin-top: 12%;
+}
+
+.email span {
+    background: rgb(255,255,231);
+    padding: 15px;
+    font-weight: bold;
     font-size: 15pt;
+}
+
+
+#about p {
+    font-size: 12pt;
 }
 
 #title {
@@ -64,7 +84,7 @@ a {
     font-family: "Inconsolata","serif";
     font-variant: small-caps;
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-top: 0px;
 }
 
 
@@ -139,8 +159,7 @@ hr.style-eight {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: thick ridge black;
-    color: black;
+    border-top: thick ridge wheat;
     text-align: center;
 }
 
