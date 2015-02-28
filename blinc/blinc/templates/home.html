@@ -7,6 +7,7 @@
 
         <meta name="description" content="Eric Blincow's software consulting home page" />
         <meta name="keywords" content="Eric Blincow" />
+        <meta name=viewport content='width=653'>
         <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}">
 
         <title>Eric Blincow Software Consulting</title>
@@ -54,7 +55,7 @@
                 if (window.$)
                     method();
                 else
-                    setTimeout(function() { defer(method) }, 50);
+                    setTimeout(function() { defer(method); }, 50);
             }
 
             function downloadJqueryAtOnload() {
