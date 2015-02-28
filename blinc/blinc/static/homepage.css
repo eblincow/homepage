@@ -13,20 +13,15 @@ a {
 
 .tabrow {
     text-align: center;
-    list-style: none;
-    margin: 15px;
-    padding: 0;
-    line-height: 24px;
-    position: relative;
     font-family: "Inconsolata";
+    margin: 0px;
 }
 
 .tabrow li {
-    margin: 4px;
+    margin: 0px;
     color: #99EBFF;
     cursor: pointer;
     padding: 10px;
-    border: 1px solid #000;
     background: #000;
     display: inline-block;
     border-radius: 2px 2px 2px 2px;
@@ -51,6 +46,30 @@ a {
 
 #pastwork h1 {
     margin-bottom: 10px;
+}
+#pastwork h2 {
+    margin-top: 33px;
+}
+
+#about p {
+    font-size: 15pt;
+}
+
+#title {
+    text-align: center;
+    background: rgb(255, 255, 231);
+}
+
+#title h1 {
+    font-family: "Inconsolata","serif";
+    font-variant: small-caps;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+
+#pastwork span {
+    background: rgb(255, 255, 231);
 }
 
 .col-1-3 {
@@ -120,8 +139,8 @@ hr.style-eight {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: medium double #333;
-    color: #333;
+    border-top: thick ridge black;
+    color: black;
     text-align: center;
 }
 
@@ -129,7 +148,7 @@ hr.style-eight {
 @media only screen
 and (max-width: 595px) {
     footer {  display: none;  }
-    h1 {  font-size: 16pt;  }
+    h1, h2 {  font-size: 16pt; font-weight: bolder;  }
     .col-2-3 {
         width: 100%;
         margin-bottom: 0px;
