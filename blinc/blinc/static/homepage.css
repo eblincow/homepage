@@ -6,6 +6,15 @@ body {
     margin: 0 0 80px; /* bottom = footer height */
 }
 
+
+.container {
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+
 a {
     cursor: pointer;
     font-weight: bold;
@@ -22,10 +31,9 @@ a {
     margin: 0px;
     color: #99EBFF;
     cursor: pointer;
-    padding: 4px;
+    padding: 9px 6px;
     background: #000;
     display: inline-block;
-    //border-radius: 7px 7px 0px 0px;
     padding-left: 16px;
     padding-right: 16px;
     font-size: larger;
@@ -57,6 +65,7 @@ a {
 #pastwork span {
     padding-top: 10px;
     padding-bottom: 10px;
+    background: rgb(255,255,231);
 }
 
 .email {
@@ -69,7 +78,6 @@ a {
     font-weight: bold;
     font-size: 15pt;
 }
-
 
 #about p {
     font-size: 12pt;
@@ -87,23 +95,12 @@ a {
     margin-top: 0px;
 }
 
-
-#pastwork span {
-    background: rgb(255, 255, 231);
-}
-
 .col-1-3 {
     width: 33.33%;
     padding-right: 3%;
     padding-left: 3%;
 }
 
-.col-half {
-    width: 50%;
-    padding-right: 3%;
-    padding-left: 3%;
-
-}
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -117,6 +114,7 @@ a {
 .pic {
     position: absolute;
     width: 100%;
+    max-width: 200px;
     top: 0;
     left: 0;
     border-radius: 20px;
@@ -163,6 +161,7 @@ hr.style-eight {
     text-align: center;
 }
 
+
 /* Smartphones and tablets and such */
 @media only screen
 and (max-width: 595px) {
@@ -171,11 +170,23 @@ and (max-width: 595px) {
     .col-2-3 {
         width: 100%;
         margin-bottom: 0px;
+        max-width: 400px;
+        padding-left: 3%;
+        padding-right: 3%;
+
     }
     .col-1-3 {  width: 100%;  }
     * {  font-size: large;  }
 }
 
 
+
+/* firefox targeted CSS */
+
+@-moz-document url-prefix() {
+    hr.style-eight {
+    margin: -3px;
+    }
+}
 
 

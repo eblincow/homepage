@@ -3,15 +3,13 @@
     <div class="col-2-3">
         <h1>Login</h1>
 
-        <div style="width: 10%; margin-left: 2%; margin-top: 5%;">
             <form method="POST" action="login">
                 {% csrf_token %}
-                <p>user <input type="text" name="u" maxlength="10" size="10"></p>
+                <div><p>user <input type="text" name="u" maxlength="10" size="10"></p></div>
 
-                <p>pass <input type="text" name="p" maxlength="10" size="10"></p>
-                <input type="submit" value="ok" style="float:right;">
+                <div><p>pass <input type="text" name="p" maxlength="10" size="10"></p></div>
+                <input type="submit" value="ok">
             </form>
-        </div>
     </div>
 
 
