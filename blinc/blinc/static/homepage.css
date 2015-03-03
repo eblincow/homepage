@@ -18,6 +18,7 @@ a {
     font-weight: bold;
 }
 
+
 .tabrow {
     text-align: center;
     font-family: "Inconsolata";
@@ -76,6 +77,7 @@ a {
 
 #pastwork .description {
     margin-left: 4%;
+    text-align: justify;
 }
 
 .email {
