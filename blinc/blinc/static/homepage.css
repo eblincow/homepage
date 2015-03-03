@@ -79,14 +79,19 @@ a {
 }
 
 .email {
-    margin-top: 12%;
+    margin-top: 4%;
+    background: rgb(255, 255, 231);
+    padding: 15px;
+    display: inline-block;
 }
 
 .email span {
-    background: rgb(255, 255, 231);
-    padding: 15px;
     font-weight: bold;
     font-size: 18px;
+    user-select: text;
+    -webkit-user-select: text; /* Chrome/Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: all; /* IE10+ */
 }
 
 #about p {
