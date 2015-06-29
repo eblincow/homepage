@@ -14,7 +14,8 @@ def home(request):
     # the main homepage view!
     context = RequestContext(request)
     context.update({'settings': settings})
-    return render_to_response('home.html', context)
+    return HttpResponse("Hello Sorld! Temporarily down for life maintenance issues.")
+    #return render_to_response('home.html', context)
 
 
 def login(request):
