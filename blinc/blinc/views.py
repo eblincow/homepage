@@ -7,7 +7,6 @@ import os
 import codecs
 
 
-
 @gzip_page
 def home(request):
     # the main homepage view!
