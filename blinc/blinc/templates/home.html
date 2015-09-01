@@ -3,8 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="content-language" content="en">
-    <link rel="shortcut icon" href="{% static 'puppy1.ico' %}" type="image/x-icon">
-
     <meta name="description" content="Eric Blincow's software consulting / computer programming home page"/>
     <meta name="keywords" content="Eric Blincow, programming, software consulting"/>
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -27,39 +25,32 @@
 
 
 <div id="title">
-            <h1>eric blincow / computer programming</h1>
+    <h1>Eric Blincow / computer programming</h1>
+</div>
 
-<div id="tabs">
-    <ul class="tabrow">
+<div>
+<ul class="tabrow">
         <li class="aboutlink selected">about</li>
         <li class="pastworklink">past work</li>
         <li class="contactlink">contact</li>
-        <li class="loginlink">login</li>
         </li>
     </ul>
 </div>
-<hr class="style-eight">
- </div>
-
+<div>
+    <hr class="style-eight">
+</div>
 
 <div class="container">
 <!-- main content -->
 {% include 'about.html' %}
 {% include 'contact.html' %}
 {% include 'pastwork.html' %}
-{% include 'login.html' %}
 </div>
-<!-- sticky footer -->
-<footer>
-    <hr class="style-eight">
-    <div class="footerpic">
-        <img src="{% static 'peace2.gif' %}" id="peacepic">
-    </div>
-</footer>
+
 
 
 <!-- javascript -->
-<script type="text/javascript" src="{% static 'homepage.min.js' %}" async></script>
+<script type="text/javascript" src="{% static 'homepage.js' %}" async></script>
 </body>
 </html>
 

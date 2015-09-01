@@ -1,9 +1,9 @@
 /* css styles for the homepage! */
 
 body {
-    background: #FFFFCC;
+    background: white;
     font-family: "Droid Sans", "Lucida Console", serif;
-    margin: 0 0 80px; /* bottom = footer height */
+    margin: 0 0 0 0; /* bottom = footer height */
     font-size: 18px;
 }
 
@@ -18,9 +18,14 @@ a {
     font-weight: bold;
 }
 
+ul.tabrow {
+
+
+    margin-right: 120px;
+}
 
 .tabrow {
-    text-align: center;
+    text-align: right;
     font-family: "Inconsolata";
     margin: 0px;
     padding: 0px;
@@ -45,7 +50,7 @@ a {
 .col-2-3 {
     float: left;
     padding-top: 36px;
-    width: 66.66%;
+    width: 90%;
     padding-left: 10%;
     padding-right: 20px;
     margin-bottom: 100px;
@@ -85,6 +90,7 @@ a {
     background: rgb(255, 255, 231);
     padding: 15px;
     display: inline-block;
+    border-color: black;
 }
 
 .email span {
@@ -94,6 +100,7 @@ a {
     -webkit-user-select: text; /* Chrome/Safari */
     -moz-user-select: text; /* Firefox */
     -ms-user-select: all; /* IE10+ */
+    border: thin black;
 }
 
 #about p {
@@ -101,15 +108,16 @@ a {
 }
 
 #title {
-    text-align: center;
-    background: rgb(255, 255, 231);
+    text-align: left;
+    /* top of bar */
+    background-color: white;
 }
 
 #title h1 {
     font-family: "Inconsolata", "serif";
-    font-variant: small-caps;
-    margin-bottom: 5px;
-    margin-top: 0px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 35px;
 }
 
 
@@ -141,44 +149,23 @@ a {
     padding-top: 10px;
 }
 
-#peacepic {
-    height: 70px;
-}
 
 .hidden {
     display: none;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    height: 72px;
-    background: rgb(255, 255, 231);
-    z-index: 1;
-}
-
-.footerpic {
-    position: absolute;
-    left: 88%;
-    bottom: -10px;
 }
 
 hr.style-eight {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: thick ridge wheat;
+    border-top: thin ridge deepskyblue;
     text-align: center;
+    z-index: -2;
 }
 
 /* Smartphones */
 @media only screen
 and (max-width: 595px) {
-    footer {
-        display: none;
-    }
 
 
     .container {

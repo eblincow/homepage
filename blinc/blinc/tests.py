@@ -32,21 +32,6 @@ class View_Tests(TestCase):
         self.assertEqual(response.status_code, 200, "Resume load failed")
         self.assertTrue("References" in response.content, "References not contained when GET param supplied")
 
-    def login_test(self):
-        request = django.http.HttpRequest()
-        request.POST['u'] = 'eb'
-        request.POST['p'] = 'arcolight'
-        response = login(request)
-        self.assertEqual(response.status_code, 200, "Login failed!")
-
-    def login_false_credentials_test(self):
-        request = django.http.HttpRequest()
-        request.POST['u'] = 'leon zundinger'
-        request.POST['p'] = 'vego the carpathian'
-        response = login(request)
-        self.assertTrue(settings.UNAUTHORIZED_MESSAGE in response.content)
-        self.assertEqual(response.status_code, 401, "Login worked when it shouldn't have!")
-
 
 
 
