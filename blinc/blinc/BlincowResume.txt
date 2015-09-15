@@ -74,17 +74,17 @@ Technologies Used
 
 
 Accomplishments in Brief
--Wrote and maintained several pages/applications for JSTOR search service, serving >1 million
+- Wrote and maintained several pages/applications for JSTOR search service, serving >1 million
 unique visitors per day
--Coded ebook preview creator/viewer system for largest publishing company in the US
--My side projects are on github at https://github.com/eblincow?tab=repositories
--Acting as a middleman between software/hardware engineers and research team, helped develop 3 novel controllers for neurophysiology recordings; maintained these and instructed other researchers in their use.
--Developed and coded on own initiative a series of MATLAB scripts that allowed for rapid processing of a dataset which contained 400 neurons spike train data over 60 hours recording time.
--Analyzed and processed this data set; presented results at Neuroscience Annual Meeting, 2011.
--Published: “Control of reflex reversal in stick insect walking”, Journal of Neurophysiology, 2012.
--Published: “A pair of motion-sensitive neurons in the locust”, Journal of Comparative Physiology, 2010.
--Presenter, Society for Neuroscience Annual Meeting, Washington, DC, 2011.
--Speaker, Neural Systems and Plasticity Research Group Retreat, Saskatoon, Saskatchewan, 2010.
+- Coded ebook preview creator/viewer system for largest publishing company in the US
+- My side projects are on github at https://github.com/eblincow?tab=repositories
+- Acting as a middleman between software/hardware engineers and research team, helped develop 3 novel controllers for neurophysiology recordings; maintained these and instructed other researchers in their use.
+- Developed and coded on own initiative a series of MATLAB scripts that allowed for rapid processing of a dataset which contained 400 neurons spike train data over 60 hours recording time.
+- Analyzed and processed this data set; presented results at Neuroscience Annual Meeting, 2011.
+- Published: “Control of reflex reversal in stick insect walking”, Journal of Neurophysiology, 2012.
+- Published: “A pair of motion-sensitive neurons in the locust”, Journal of Comparative Physiology, 2010.
+- Presenter, Society for Neuroscience Annual Meeting, Washington, DC, 2011.
+- Speaker, Neural Systems and Plasticity Research Group Retreat, Saskatoon, Saskatchewan, 2010.
 
 
 References 
