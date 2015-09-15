@@ -70,6 +70,7 @@ Technologies Used
 - Java application maintenance and debugging
 - Very extensive linux/unix knowledge (4 years)
 - Apache2/gunicorn web server experience (2 years)
+- Extensive collaborative use of github & SVN
 - AWS (2 years)
 
 
