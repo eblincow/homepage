@@ -58,7 +58,7 @@ Research into the molecular factors underlying arthritis.
 
 
 Technologies Used
-- Python, 5 years (version 2.6 to 3.3)
+- Python, 5 years (version 2.3 to 3.3)
 - Standard library and various third party libs (botocore, custom)
 - Django, 2 years (version 1.4 to 1.7)
 - Django templating, middleware, security, databases
