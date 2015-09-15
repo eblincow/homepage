@@ -13,6 +13,8 @@ ITHAKA
 03/14 - 01/20
 Coding python/django back-end and javascript/ui front-end for JSTOR search service.
 Focus on UI, service layer, logging, analytics.
+Extensive work with templating, middleware, custom and third party analytics, optimization technologies and service calls/API integration.
+Extensive work with javascript. 
 
 Python/Django Developer
 VectorForm, Royal Oak, MI
@@ -21,12 +23,13 @@ VectorForm, Royal Oak, MI
 Coded django back-end of interactive Ebook reader used in online booksales.
 Worked with client during design phase to assess needs and features.
 Focus on unit-testing, performance optimization, deployment, maintenance.
+Extensive work with databases, SQL, XML, text parsing, and unix, server configuration and deployment.
 
 Web Developer                                           
 Michigan Roundtable, Detroit, MI
 03/13 – 09/13
 Built and configured state-wide network user database using Python and SQL.
-Automated data processing, parsing and retrieval using Python scripts.
+Automated data processing, parsing and retrieval using Python scripts. Worked with xml, SQL, javascript, html/css and automated spreadsheet processing.
 
 Web & IT Technical Support (Volunteer)
 National Multiple Sclerosis Society                                     
@@ -52,6 +55,23 @@ Research Assistant / BSc. Molecular Biology & German
 Koch Laboratories, U of M Dept. of Medicine, Ann Arbor, MI
 08/05 – 04/06
 Research into the molecular factors underlying arthritis. 
+
+
+Technologies Used
+- Python, 5 years (version 2.6 to 3.3)
+- Standard library and various third party libs (botocore, custom)
+- Django, 2 years (version 1.4 to 1.7)
+- Django templating, middleware, security, databases
+- Unit testing in python and javascript
+- Javascript, 2 years (jquery and vanilla)
+- Javascript frameworks: require, simon, etc.
+- SQL databases, MySQL, PostgresSQL, Sqlite
+- XML processing and ebook formatting
+- Java application maintenance and debugging
+- Very extensive linux/unix knowledge (4 years)
+- Apache2/gunicorn web server experience (2 years)
+- AWS (2 years)
+
 
 Accomplishments in Brief
 -Wrote and maintained several pages/applications for JSTOR search service, serving >1 million
