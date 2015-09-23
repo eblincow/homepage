@@ -12,11 +12,9 @@ homepage.js
 - basically hide/show functions for the menu buttons on the top of the screen
 
 views.py
-- homepage view, login view, and resume view
+- homepage view and resume view
 - by adding '?references' you get the references section as well
 
-client_apps
-- This is where you can throw client code to display it
 
 
 
