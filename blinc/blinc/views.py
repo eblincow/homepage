@@ -33,4 +33,11 @@ def resume(request):
 def pp(request):
     # erix archived presence portal
     context = RequestContext(request)
+    return render_to_response('pp/pp.html', context)
+
+
+
+def ppfull(request):
+    # erix archived presence portal
+    context = RequestContext(request)
     return render_to_response('pp/index.html', context)

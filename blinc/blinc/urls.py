@@ -7,5 +7,7 @@ urlpatterns = patterns('',
                        # /resume -- the resume without references
                        # /resume?references -- the resume with references
                        url(r'^resume', 'blinc.views.resume', name='resume'),
-                       url(r'^pp', 'blinc.views.pp', name='pp'),
+                       url(r'^pp$', 'blinc.views.pp', name='pp'),
+                       url(r'^ppfull', 'blinc.views.ppfull', name='ppfull'),
 )
+
