@@ -1,10 +1,12 @@
+import os
+import codecs
+
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.conf import settings
 from django.views.decorators.gzip import gzip_page
 from django.http import HttpResponse
-import os
-import codecs
+
 
 
 @gzip_page
@@ -41,3 +43,8 @@ def ppfull(request):
     # erix archived presence portal
     context = RequestContext(request)
     return render_to_response('pp/index.html', context)
+
+def blog(request):
+    # blog
+    context = RequestContext(request)
+    return render_to_response('blog.html', context)

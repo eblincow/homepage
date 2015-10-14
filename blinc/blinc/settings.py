@@ -66,10 +66,6 @@ STATICFILES_DIRS = (
     os.path.join(DIR_2, "static"),
 )
 
-USERNAMES = {'eb': 'arcolight'}
-EMAIL = "eric@eblincow.com"
-# Dont use apostrophes ' or funky characters orjj
-UNAUTHORIZED_MESSAGE = "You aren't authorized to access this area!"
 
 
 
