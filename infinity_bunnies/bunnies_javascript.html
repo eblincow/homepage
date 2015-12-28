@@ -2,15 +2,14 @@
 # that gets loaded by blogger 
 
 
-
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
+<script src="http://eblincow.com/static/bunnies/highlight/highlight.pack.js"></script>
+<link rel="stylesheet" href="http://eblincow.com/static/bunnies/highlight/styles/monokai-sublime.css" type="text/css" />
 
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/styles/sons-of-obsidian.css" />
 
 <script>
 
@@ -26,8 +25,9 @@ var menu = `<div id="menuContainer"><ul id="menu">
 
 $( document ).ready(function() {
     // Handler for .ready() called.
-     img = '<img src="http://eblincow.com/static/bunny1.JPG" style="float:right; z-index: 3; max-height: 350px;">'
-
+         
+    img = '<img src="http://eblincow.com/static/bunny1.JPG" style="float:right; z-index: 3; max-height: 350px;">'
+    
     $('.header-inner').prepend(img);
     $('.header-inner').append(menu);
     $(function() {
@@ -50,9 +50,12 @@ $( document ).ready(function() {
      
      //$('#menu').css('width','15%').css('float','right').css('margin','5%');
     $('#menuContainer').css('margin-left','50%').css('margin-top','5%');
+    hljs.initHighlightingOnLoad();
+    
+    setTimeout( function() { $('.hljs').css('font-size','12pt'); $('.hljs').css('border-radius','20px 20px 20px 20px'); $('code').css('width','60%'); }, 1000);
 
 });
+
+
 </script>
-
-
 
