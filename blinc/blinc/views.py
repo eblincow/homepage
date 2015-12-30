@@ -32,19 +32,8 @@ def resume(request):
 
 
 
-def pp(request):
+def portal(request):
     # erix archived presence portal
     context = RequestContext(request)
-    return render_to_response('pp/pp.html', context)
+    return render_to_response('portal/index.html', context)
 
-
-
-def ppfull(request):
-    # erix archived presence portal
-    context = RequestContext(request)
-    return render_to_response('pp/index.html', context)
-
-def blog(request):
-    # blog
-    context = RequestContext(request)
-    return render_to_response('blog.html', context)
