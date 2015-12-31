@@ -1,7 +1,6 @@
 # This is main custom html/javascript piece
 # that gets loaded by blogger 
 
-
 <link rel="shortcut icon" href="http://example.com/myicon.ico" />
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
@@ -54,6 +53,10 @@ $( document ).ready(function() {
     $('#menuContainer').css('margin-left','50%').css('margin-top','5%');
     hljs.initHighlightingOnLoad();
     $('p a').css('color','pink');
+    $('.post-labels').each(function(i,label){ var newlabel = $(label).text().replace('Labels:',''); console.log(newlabel); $(label).text(newlabel); $(label).css('color','pink'); });
+    $('.post-author, .post-timestamp').hide();
+    $('.reaction-buttons').hide()
+    
 
     // code coloring waits for highlighter to load
     setTimeout( function() { $('.hljs').css('font-size','12pt'); $('.hljs').css('border-radius','10px 10px 10px 10px'); $('.hljs').css('padding-left','2%'); $('.gist-file').css('height','200px');
@@ -68,5 +71,4 @@ $( document ).ready(function() {
 <script type="text/javascript"
      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
-
 
