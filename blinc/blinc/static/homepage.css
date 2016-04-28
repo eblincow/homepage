@@ -100,7 +100,7 @@ ul.tabrow {
 }
 
 #about p {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #title {
@@ -115,6 +115,7 @@ ul.tabrow {
     margin-bottom: 10px;
     margin-top: 35px;
 }
+
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
