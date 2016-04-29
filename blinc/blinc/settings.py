@@ -38,15 +38,6 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'blinc.urls'
 WSGI_APPLICATION = 'blinc.wsgi.application'
-
-# Compromise between testing framework and GAE
-if 'test' in sys.argv or 'test_coverage' in sys.argv:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-        }
-    }
-
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True

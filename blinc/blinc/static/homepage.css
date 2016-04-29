@@ -13,7 +13,7 @@ body {
     margin-left: auto;
 }
 
-a {
+#homepage a {
     cursor: pointer;
     font-weight: bold;
 }
@@ -61,10 +61,6 @@ ul.tabrow {
     width: 33.33%;
     padding-right: 3%;
     padding-left: 3%;
-}
-
-#pastwork h1 {
-    margin-bottom: 10px;
 }
 
 #pastwork h2 {
@@ -157,6 +153,22 @@ hr.style-eight {
     text-align: center;
     z-index: -2;
 }
+
+
+#thankyou p {
+    margin: 10%;
+    font-color: "pink";
+
+font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
+    color: pink;
+
+}
+
 
 /* Smartphones */
 @media only screen

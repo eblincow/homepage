@@ -33,7 +33,12 @@ def resume(request):
 
 
 def portal(request):
-    # erix archived presence portal
+    # erix IFS modified portal
     context = RequestContext(request)
     return render_to_response('portal/index.html', context)
 
+
+def pp(request):
+    # erix archived presence portal
+    context = RequestContext(request)
+    return render_to_response('portal/index2.html',context)
