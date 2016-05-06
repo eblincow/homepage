@@ -18,13 +18,17 @@ body {
     font-weight: bold;
 }
 
+#homepage p a {
+    font-weight: normal;
+}
+
 ul.tabrow {
 
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .tabrow {
-    text-align: right;
+    text-align: center;
     font-family: "Inconsolata";
     margin: 0px;
     padding: 0px;
@@ -36,10 +40,10 @@ ul.tabrow {
     cursor: pointer;
     padding: 3px;
     background: #000;
-    display: inline-block;
-    padding-left: 16px;
+    /* display: inline-block; */
+    /* padding-left: 16px; */
     padding-right: 16px;
-/ / font-size : 15 px;
+    font-size : 15 px;
 }
 
 .tabrow li.selected {
@@ -47,12 +51,12 @@ ul.tabrow {
 }
 
 .col-2-3 {
-    float: left;
-    padding-top: 20px;
-    width: 90%;
-    padding-left: 10%;
-    padding-right: 20px;
-    margin-bottom: 100px;
+    /* float: left; */
+    /* padding-top: 20px; */
+    /* width: 90%; */
+    /* padding-left: 10%; */
+    /* padding-right: 20px; */
+    /* margin-bottom: 100px; */
 }
 
 .col-1-3 {
@@ -96,25 +100,27 @@ ul.tabrow {
 }
 
 #about p {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #title {
-    text-align: left;
+    /*/text-align: left;
+    //margin-left: 12%; 
     /* top of bar */
     background-color: white;
+    text-align: center;
 }
 
 #title h1 {
     font-family: "Inconsolata", "serif";
-    margin-left: 35px;
-    margin-bottom: 10px;
-    margin-top: 35px;
+    /* margin-left: 35px; */
+    /* /*margin-bottom: 10px; */
+    margin-top: 35px;*/
 }
 
 
 *, *:after, *:before {
-    -webkit-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-user-select: none; /* Chrome/Safari */
