@@ -8,9 +8,11 @@ body {
 }
 
 .container {
-    width: 900px;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #homepage a {
@@ -100,7 +102,7 @@ ul.tabrow {
 }
 
 #about p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #title {
