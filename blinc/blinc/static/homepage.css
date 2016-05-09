@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    width: 50%;
+    width: 55%;
     margin-right: auto;
     margin-left: auto;
     text-align: justify;
@@ -183,8 +183,8 @@ font-family: Tahoma, Verdana, Segoe, sans-serif;
 and (max-width: 595px) {
 
     .container {
-        width: 100%;
-    }
+        width: 80%;    
+}
 
     h1, h2 {
         font-size: 18px;
@@ -193,10 +193,10 @@ and (max-width: 595px) {
 
     .col-2-3 {
         width: 100%;
-        margin-bottom: 0px;
-        max-width: 400px;
-        padding-left: 3%;
-        padding-right: 3%;
+        /* margin-bottom: 0px; */
+        /* max-width: 400px; */
+        /* padding-left: 3%; */
+        /* padding-right: 3%; */
 
     }
 
@@ -217,7 +217,7 @@ and (max-width: 595px) {
 @media only screen
 and (max-width: 850px) {
     .container {
-        width: 100%;
+       width: 75%;
     }
 }
 
